@@ -90,6 +90,111 @@ h1 a {
     display: none;
 }
 
+/* hero stylings */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('/assets/images/hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white-color);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 31, 36, 0.9);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 600px;
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.animated-text {
+    font-size: 3.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--text-white-color);
+    margin: 1rem 0;
+}
+
+.typing-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.hero-text p {
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    color: var(--text-white-color);
+}
+
+.btn.primary {
+    background-color: var(--primary-color);
+}
+
+.btn.secondary {
+    border: 1px solid var(--text-white-color);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.btn.secondary:hover {
+    color: rgba(6, 31, 36, 0.9);
+    background-color: var(--text-white-color);
+}
+
+.hero-image img {
+    max-width: 350px;
+    height: auto;
+    display: block;
+}
+
 @media (max-width: 1023px) {
     header {
         padding: 0.5rem 1rem;

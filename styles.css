@@ -11,6 +11,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* header styles */
@@ -94,7 +95,6 @@ h1 a {
 #hero {
     position: relative;
     width: 100%;
-    height: 100vh;
     background: url('/assets/images/hero.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -126,7 +126,6 @@ h1 a {
 
 .hero-text {
     max-width: 600px;
-    flex: 1;
 }
 
 .hero-text h2 {
@@ -195,13 +194,10 @@ h1 a {
     display: block;
 }
 
-@media (max-width: 1023px) {
+/* phone media queries */
+@media (max-width: 767px) {
     header {
         padding: 0.5rem 1rem;
-    }
-
-    nav {
-        position: relative;
     }
 
     h1 a {
@@ -232,5 +228,86 @@ h1 a {
 
     .menu-toggle {
         display: block;
+    }
+
+    #hero {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .animated-text {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+}
+
+/* tablet media queries */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    h1 a {
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -20px;
+        background-color: var(--primary-bg-color);
+        padding: 1rem 2rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nav-item {
+        justify-content: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .animated-text {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        max-width: 400px;
+    }
+    
+    .hero-image img {
+        max-width: 300px;
     }
 }

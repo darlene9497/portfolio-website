@@ -79,3 +79,53 @@ h1 a {
     font-size: 1.2rem;
     cursor: pointer;
 }
+
+.menu-toggle {
+    font-size: 1.5rem;
+    color: var(--text-white-color);
+    background-color: var(--primary-color);
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    h1 a {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -20px;
+        background-color: var(--primary-bg-color);
+        padding: 1rem 2rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nav-item {
+        justify-content: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

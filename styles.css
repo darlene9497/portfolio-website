@@ -453,6 +453,7 @@ h1 a {
 .what-we-offer-img img {
     max-width: 400px;
 }
+
 /* phone media queries */
 @media (max-width: 767px) {
     /* header */
@@ -532,8 +533,9 @@ h1 a {
 
     /* about */
     #about,
-    #skills {
-        padding: 2rem 1rem;
+    #skills,
+    #what-we-offer {
+        padding: 4rem 1rem;
     }
 
     .about-container,
@@ -578,6 +580,17 @@ h1 a {
 
     .service-card {
         padding: 1rem;
+    }
+
+    /* what we offer */
+    .what-we-offer-container, 
+    .services-offered-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .what-we-offer-img img {
+        width: 300px;
     }
 }
 
@@ -638,7 +651,8 @@ h1 a {
 
     /* about */
     #about,
-    #skills {
+    #skills,
+    #what-we-offer {
         padding: 2rem 0.4rem;
     }
 
@@ -669,8 +683,12 @@ h1 a {
     .skills-img img {
         width: 420px;
     }
-}
 
+    /* what we offer */
+    .what-we-offer-img img {
+        width: 300px;
+    }
+}
 /*contact styles*/
 .success-work {
     text-align: center;

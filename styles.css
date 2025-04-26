@@ -91,7 +91,7 @@ h1 a {
     display: none;
 }
 
-/* hero stylings */
+/* hero styles */
 #hero {
     position: relative;
     width: 100%;
@@ -165,7 +165,7 @@ h1 a {
 }
 
 .btn {
-    padding: 0.8rem 2rem;
+    padding: 1rem 2.2rem;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -192,6 +192,116 @@ h1 a {
     max-width: 350px;
     height: auto;
     display: block;
+}
+
+/* about styles */
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 8rem;
+}
+
+.about-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h6 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.about-content h3 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.single-about-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 0 calc(50% - 1rem);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.single-about-info span {
+    color: var(--heading-color);
+}
+
+.single-about-info p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.follow-me {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.follow-me h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--heading-color);
+}
+
+.follow-me i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.about-btns {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.about-btns a {
+    padding: 1rem 2.2rem;
+    background-color: var(--primary-color);
+    color: var(--text-white-color);
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.about-btns a:last-of-type {
+    background-color: var(--secondary-color);
 }
 
 /* phone media queries */

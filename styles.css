@@ -412,7 +412,47 @@ h1 a {
     transition: width 1s ease-in-out;
 }
 
+/* what we offer styles */
+#what-we-offer {
+    padding: 2rem 5rem;
+    background-color: var(--bg-grey-color);
+}
 
+.what-we-offer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services-offered-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.service-offered {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.service-offered i {
+    font-size: 1.8rem;
+}
+
+.service-offered-text h4 {
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    margin-bottom: 0.8rem;
+}
+
+.service-offered-text p {
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.what-we-offer-img img {
+    max-width: 400px;
+}
 /* phone media queries */
 @media (max-width: 767px) {
     /* header */

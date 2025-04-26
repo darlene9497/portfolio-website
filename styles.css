@@ -322,6 +322,56 @@ h1 a {
     background-color: var(--secondary-color);
 }
 
+/* services styles */
+#services {
+    background-color: var(--bg-grey-color);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-title h3 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+}
+
+.service-cards-container {
+    display: flex;
+    margin: 2.5rem 0;
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: var(--text-white-color);
+    padding: 2.2rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.service-card h5 {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.service-card p {
+    color: var(--text-color);
+    line-height: 1.75;
+    font-size: 1.1rem;
+}
+
+.service-btn a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 /* phone media queries */
 @media (max-width: 767px) {
     /* header */
@@ -427,6 +477,7 @@ h1 a {
         flex: 0 0 100%;
     }
 }
+
 /* tablet media queries */
 @media (min-width: 768px) and (max-width: 1023px) {
     /* header */

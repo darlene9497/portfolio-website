@@ -16,12 +16,23 @@ body {
 
 /* header styles */
 header {
-    background-color: var(--primary-bg-color);
+    background-color: transparent;
     color: var(--text-white-color);
-    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(6, 31, 36, 0.9); /* This matches your overlay but still shows content slightly */
+    backdrop-filter: blur(10px); /* Optional: adds a nice glass effect */
 }
 
 nav {
@@ -120,7 +131,7 @@ h1 a {
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    padding: 0 2rem;
+    padding: 6rem 2rem 0;
     flex-wrap: wrap;
 }
 

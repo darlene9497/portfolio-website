@@ -1,3 +1,14 @@
+// sticky header
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+// menu toggle for smaller screens
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const navItems = document.querySelectorAll('.nav-links .nav-item');

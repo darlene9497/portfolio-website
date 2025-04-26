@@ -476,6 +476,23 @@ h1 a {
     .single-about-info {
         flex: 0 0 100%;
     }
+
+    /* service */
+    #services {
+        padding: 3rem 1rem;
+    }
+
+    .service-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-cards-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        padding: 1rem;
+    }
 }
 
 /* tablet media queries */
@@ -545,6 +562,15 @@ h1 a {
 
     .single-about-info {
         flex: 0 0 100%;
+    }
+
+    /* services */
+    #services {
+        padding: 1rem;
+    }
+
+    .service-card {
+        padding: 1rem;
     }
 }
 

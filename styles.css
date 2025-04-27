@@ -338,7 +338,8 @@ h1 a {
     align-items: center;
 }
 
-.service-title h3 {
+.service-title h3,
+.portfolio-title h3 {
     font-size: 2.5rem;
     color: var(--heading-color);
 }
@@ -414,7 +415,8 @@ h1 a {
 }
 
 /* what we offer styles */
-#what-we-offer {
+#what-we-offer,
+#portfolio {
     padding: 2rem 5rem;
     background-color: var(--bg-grey-color);
 }
@@ -475,6 +477,28 @@ h1 a {
     color: var(--text-color);
     font-size: 1.2rem;
     margin-top: 0.8rem;
+}
+
+/* portfolio styles */
+.portfolio-container {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 1.3rem;
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* phone media queries */
@@ -594,7 +618,8 @@ h1 a {
 
     .service-title h3,
     .skills-content h3,
-    .counter {
+    .counter,
+    .portfolio-title h3 {
         font-size: 1.5rem;
     }
 
@@ -726,41 +751,12 @@ h1 a {
     .counter {
         font-size: 2rem;
     }
-    
+
     .stat p {
         font-size: 1rem;
     }
 }
 /*contact styles*/
-.success-work {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f6f6f6;
-  }
-  
-  .success-work h2 {
-    font-size: 2rem;
-    margin-bottom: 1px;
-    color: #333;
-    
-  }
-  
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-bottom: 4rem;
-    padding: 70px;
-   
-  }
-  
-  .gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
   
   .logo-band {
     background-color: #387e67;

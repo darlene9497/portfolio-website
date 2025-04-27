@@ -127,3 +127,16 @@ function checkScroll() {
 }
 
 window.addEventListener('scroll', checkScroll);
+
+
+
+// auto-duplicate clients logos to enable animation scroll
+document.addEventListener("DOMContentLoaded", function() {
+  const logoContainer = document.querySelector('.clients-logo');
+  const logos = Array.from(logoContainer.children);
+
+  logos.forEach(logo => {
+    const clone = logo.cloneNode(true);
+    logoContainer.appendChild(clone);
+  });
+});

@@ -8,6 +8,8 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
+
 // menu toggle for smaller screens
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -33,6 +35,7 @@ document.addEventListener('click', (e) => {
     menuToggle.classList.remove('open');
   }
 });
+
 
 
 // animated text
@@ -86,3 +89,41 @@ function type() {
 // start the typing effect
 type();
 
+
+
+// statistics
+const counters = document.querySelectorAll('.counter');
+let hasStarted = false;
+
+function startCounters() {
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    const speed = 200;
+    const increment = target / speed;
+    
+    const updateCounter = () => {
+      const current = +counter.innerText;
+      if (current < target) {
+        counter.innerText = Math.ceil(current + increment);
+        setTimeout(updateCounter, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCounter();
+  });
+}
+
+// detect when stats section is in view to start the counter
+function checkScroll() {
+  const statsSection = document.getElementById('stats');
+  const sectionTop = statsSection.getBoundingClientRect().top;
+  const screenHeight = window.innerHeight;
+
+  if (sectionTop < screenHeight && !hasStarted) {
+    startCounters();
+    hasStarted = true;
+  }
+}
+
+window.addEventListener('scroll', checkScroll);

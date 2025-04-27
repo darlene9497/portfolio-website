@@ -140,3 +140,25 @@ document.addEventListener("DOMContentLoaded", function() {
     logoContainer.appendChild(clone);
   });
 });
+
+
+
+// ensure smooth scrolling to the top
+document.querySelector(".scroll-top-btn").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+});
+
+// scroll to top button appear only when scrolling
+const scrollBtn = document.querySelector(".scroll-top-btn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) { 
+    scrollBtn.classList.add("show"); 
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});

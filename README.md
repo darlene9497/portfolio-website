@@ -43,28 +43,7 @@ To set up this project locally:
 
 📁 **Folder structure:**
 
-group_portfolio_website/
-  assets/
-    images/
-      about.jpg
-      hero.jpg
-      john-photo.png
-      skills.jpg
-      Work 1.jpg
-      Work 2.jpg
-      Work 3.jpg
-      Work 4.jpg
-      Work 5.jpg
-      Work 6.jpg
-    logos/
-      logo1.png
-      logo2.png
-      logo3.png
-      logo4.png
-      logo5.png
-  styles.css
-  index.html
-  main.js
+<pre> ```plaintext group_portfolio_website/ ├── assets/ │ ├── images/ │ │ ├── about.jpg │ │ ├── hero.jpg │ │ ├── john-photo.png │ │ ├── skills.jpg │ │ ├── Work 1.jpg │ │ ├── Work 2.jpg │ │ ├── Work 3.jpg │ │ ├── Work 4.jpg │ │ ├── Work 5.jpg │ │ ├── Work 6.jpg │ └── logos/ │ ├── logo1.png │ ├── logo2.png │ ├── logo3.png │ ├── logo4.png │ ├── logo5.png ├── styles.css ├── index.html └── main.js ``` </pre>
 
 🌐 **Live demo:**  
 [View project on Netlify](https://portfolio-website-replica.netlify.app/)

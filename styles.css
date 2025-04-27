@@ -81,6 +81,11 @@ h1 a {
     font-weight: bold;
 }
 
+.nav-item a {
+    text-decoration: none;
+    color: var(--text-white-color);
+}
+
 .nav-item i {
     font-size: 0.8rem;
 }

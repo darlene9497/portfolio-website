@@ -213,7 +213,8 @@ h1 a {
 
 /* about styles */
 #about,
-#skills {
+#skills,
+#stats {
     display: flex;
     justify-content: center;
     padding: 5rem 8rem;
@@ -454,6 +455,28 @@ h1 a {
     max-width: 400px;
 }
 
+/* stats styles */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.counter {
+    color: var(--heading-color);
+    font-size: 3rem;
+}
+
+.stat p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+
 /* phone media queries */
 @media (max-width: 767px) {
     /* header */
@@ -570,7 +593,8 @@ h1 a {
     }
 
     .service-title h3,
-    .skills-content h3 {
+    .skills-content h3,
+    .counter {
         font-size: 1.5rem;
     }
 
@@ -591,6 +615,15 @@ h1 a {
 
     .what-we-offer-img img {
         width: 300px;
+    }
+
+    /* stats */
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat p {
+        font-size: 1rem;
     }
 }
 
@@ -687,6 +720,15 @@ h1 a {
     /* what we offer */
     .what-we-offer-img img {
         width: 300px;
+    }
+
+    /* stats */
+    .counter {
+        font-size: 2rem;
+    }
+    
+    .stat p {
+        font-size: 1rem;
     }
 }
 /*contact styles*/

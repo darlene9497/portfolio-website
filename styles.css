@@ -574,14 +574,19 @@ h1 a {
         margin-top: 2rem;
     }
 
-    .hero-image img {
+    .hero-image img,
+    .about-img img,
+    .skills-img img,
+    .gallery img {
         max-width: 300px;
     }
 
     /* about */
     #about,
+    #services,
     #skills,
-    #what-we-offer {
+    #what-we-offer,
+    #portfolio {
         padding: 4rem 1rem;
     }
 
@@ -590,11 +595,6 @@ h1 a {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
-    }
-    
-    .about-img img,
-    .skills-img img {
-        max-width: 300px;
     }
 
     .about-content,
@@ -612,10 +612,6 @@ h1 a {
     }
 
     /* service */
-    #services {
-        padding: 3rem 1rem;
-    }
-
     .service-title h3,
     .skills-content h3,
     .counter,
@@ -649,6 +645,13 @@ h1 a {
 
     .stat p {
         font-size: 1rem;
+    }
+
+    /* portfolio */
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto;
     }
 }
 
@@ -754,6 +757,11 @@ h1 a {
 
     .stat p {
         font-size: 1rem;
+    }
+
+    /* gallery */
+    .gallery {
+        grid-template-columns: repeat(3, 250px);
     }
 }
 /*contact styles*/

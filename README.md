@@ -41,6 +41,10 @@ To set up this project locally:
     ```
 3. Open ```index.html``` in your preferred web browser to view the website.
 
+## Preview
+
+![Screenshot of the portfolio website](./portfolio-website.png)
+
 🌐 **Live demo:**  
 [View project on Netlify](https://portfolio-website-replica.netlify.app/)
 
